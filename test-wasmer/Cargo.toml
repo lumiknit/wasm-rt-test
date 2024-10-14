@@ -1,0 +1,12 @@
+[package]
+name = "test-wasmer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wasmer = "4.4"
+
+[profile.release]
+lto = true
+panic = "abort"
+opt-level = "z"
